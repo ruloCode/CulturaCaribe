@@ -10,12 +10,12 @@ function App() {
   return (
     <div>
       <Header />
-      <Hero />
+      {/* <Hero />
       <Clients />
       <Works />
       <Reviews />
-      <Services />
-      <Footer />
+      <Services /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
