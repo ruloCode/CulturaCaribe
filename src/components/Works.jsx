@@ -58,7 +58,7 @@ const Works = () => {
               Rental Rooms Web App Platform
             </h3>
           </div>
-          <div className="flex flex-col gap-4">
+          {/* <div className="flex flex-col gap-4">
             <img
               src="work5.png"
               className="w-full h-56 object-cover rounded-3xl"
@@ -67,7 +67,7 @@ const Works = () => {
             <h3 className="text-2xl font-bold">
               Calendar App for Big SASS Company
             </h3>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
