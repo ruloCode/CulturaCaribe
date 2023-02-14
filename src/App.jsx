@@ -10,7 +10,8 @@ function App() {
   return (
     <div>
       <Header />
-      {/* <Hero />
+   <Hero />
+      {/* 
       <Clients />
       <Works />
       <Reviews />

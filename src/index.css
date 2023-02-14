@@ -9,3 +9,8 @@ html {
   ::-webkit-scrollbar {
     width: 0px;
   }
+
+
+
+
+  .swiper-button-disabled { opacity: 0 !important;  cursor: default !important; }

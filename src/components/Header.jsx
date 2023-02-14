@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Logo from '../assets/CULTURA CARIBE.svg'
 // Icons
 import {
   RiCheckboxBlankCircleFill,
@@ -12,7 +13,10 @@ const Header = () => {
     <header className="flex items-center justify-between xl:justify-start w-full py-4 px-8 h-[10vh] z-50">
       <div className="xl:w-1/6 text-center -mt-4">
         <a href="#" className="text-2xl font-bold relative ">
-         CulturaCaribe
+         <img
+                src={Logo}
+                class="h-14 w-auto mt-4"
+              />
         </a>
       </div>
       <nav
