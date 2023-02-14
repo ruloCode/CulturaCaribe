@@ -1,4 +1,6 @@
 import React from "react";
+import Logo from '../assets/CULTURA CARIBE-02.png'
+
 // Icons
 import {
   RiCheckboxBlankCircleFill,
@@ -18,7 +20,12 @@ const Footer = () => {
             href="#"
             className="text-2xl font-bold relative p-1 bg-footer text-white"
           >
-            Power<span className="text-primary text-5xl">.</span>{" "}
+
+
+            <img
+                src={Logo}
+                class="h-14 w-auto mt-4"
+              />
           </a>
         </div>
         {/* Social media */}
@@ -43,56 +50,39 @@ const Footer = () => {
       </div>
       <div className="mt-8">
         <h3 className="text-lg font-bold text-white text-center md:text-left">
-          Company
+          Cultura Caribe
         </h3>
         <nav className="mt-4 flex flex-col md:flex-row items-center justify-between gap-4">
           <a
             href="#"
             className="text-gray-300 mt-4 hover:text-white transition-colors"
           >
-            About Us
+            Festicaribe
           </a>
           <a
             href="#"
             className="text-gray-300 mt-4 hover:text-white transition-color"
           >
-            Press
+            Fundam
           </a>
           <a
             href="#"
             className="text-gray-300 mt-4 hover:text-white transition-color"
           >
-            Investors
+            Cecota
           </a>
-          <a
-            href="#"
-            className="text-gray-300 mt-4 hover:text-white transition-color"
-          >
-            Events
-          </a>
-          <a
-            href="#"
-            className="text-gray-300 mt-4 hover:text-white transition-color"
-          >
-            Terms of use
-          </a>
-          <a
-            href="#"
-            className="text-gray-300 mt-4 hover:text-white transition-color"
-          >
-            Privacy policy
-          </a>
+         
           <button
             type="button"
             className="font-semibold py-2 px-6 bg-primary text-white rounded-xl"
           >
-            Contact Us
+            Contacto
           </button>
         </nav>
       </div>
       <div className="mt-20">
         <p className="text-gray-300 text-center">
-          © jotredev 2022 - All Rights Reserved
+          © rulocode 2023 - All Rights Reserved
         </p>
       </div>
     </footer>

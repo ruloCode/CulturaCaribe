@@ -10,7 +10,10 @@ import {
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <header className="flex items-center justify-between xl:justify-start w-full py-4 px-8 h-[10vh] z-50">
+    <header
+    
+    className="sticky top-0 z-50 bg-white  shadow-lg py-4 px-6 flex items-center justify-between xl:justify-start w-full py-4 px-8 h-[10vh] z-50">
+
       <div className="xl:w-1/6 text-center -mt-4">
         <a href="#" className="text-2xl font-bold relative ">
          <img
