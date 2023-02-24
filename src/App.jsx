@@ -14,9 +14,9 @@ function App() {
       
       <Clients />
 
-      {/* <Works /> */}
+      <Works />
       <Reviews />
-      {/* <Services />   */}
+      <Services />  
       <Footer />
     </div>
   );

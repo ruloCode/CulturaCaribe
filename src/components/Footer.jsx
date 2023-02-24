@@ -9,6 +9,10 @@ import {
   RiTwitterLine,
   RiGithubLine,
 } from "react-icons/ri";
+import {
+  GrYoutube
+} from "react-icons/gr";
+
 
 const Footer = () => {
   return (
@@ -30,22 +34,19 @@ const Footer = () => {
         </div>
         {/* Social media */}
         <nav className="flex items-center gap-4">
-          <a href="#" className="block text-white p-4 bg-primary rounded-full">
+          <a href="https://www.instagram.com/festicaribe/ " target="_blank" className="block text-white p-4 bg-primary rounded-full">
             {" "}
             <RiInstagramLine />{" "}
           </a>
-          <a href="#" className="block text-white p-4 bg-primary rounded-full">
+          <a href="https://www.facebook.com/festicaribe/?ref=pages_you_manage " target="_blank" className="block text-white p-4 bg-primary rounded-full">
             {" "}
             <RiFacebookLine />{" "}
           </a>
-          <a href="#" className="block text-white p-4 bg-primary rounded-full">
+          <a href="https://www.youtube.com/channel/UCWAIPO0oGp5dU214hDj2ceA " target="_blank" className="block text-white p-4 bg-primary rounded-full">
             {" "}
-            <RiTwitterLine />{" "}
+            <GrYoutube />{" "}
           </a>
-          <a href="#" className="block text-white p-4 bg-primary rounded-full">
-            {" "}
-            <RiGithubLine />{" "}
-          </a>
+         
         </nav>
       </div>
       <div className="mt-8">
@@ -80,11 +81,7 @@ const Footer = () => {
           </button>
         </nav>
       </div>
-      <div className="mt-20">
-        <p className="text-gray-300 text-center">
-          © rulocode 2023 - All Rights Reserved
-        </p>
-      </div>
+     
     </footer>
   );
 };
