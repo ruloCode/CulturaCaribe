@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import Logo from '../assets/CULTURA CARIBE.svg'
 // Icons
 import {
@@ -27,18 +28,18 @@ const Header = () => {
           showMenu ? "left-0" : "-left-full"
         } top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50`}
       >
-        <a href="#home" className="">
-          Inicio
-        </a>
-        <a href="#aboutUs" className="">
-          Festicaribe
-        </a>
-        <a href="#services" className="">
-        Fundam
-        </a>
-        <a href="#aboutUs" className="">
-          Cecota
-        </a>
+       <Link to="/" className="">
+    Inicio
+  </Link>
+  <Link to="/festicaribe" className="">
+    Festicaribe
+  </Link>
+  <Link to="/fundam" className="">
+    Fundam
+  </Link>
+  <Link to="/cecota" className="">
+    Cecota
+  </Link>
       </nav>
       <button
         onClick={() => setShowMenu(!showMenu)}
