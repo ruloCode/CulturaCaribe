@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/CULTURA CARIBE.svg'
 // Icons
 import {
@@ -10,6 +10,12 @@ import {
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const location = useLocation();
+  const isActive = (path) => {
+    return location.pathname === path ? "activa" : "";
+  };
+
+  console.log(location)
   return (
     <header
     
@@ -29,15 +35,22 @@ const Header = () => {
         } top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50`}
       >
        <Link to="/" className="">
+        
     Inicio
   </Link>
-  <Link to="/festicaribe" className="">
+  <Link to="/festicaribe" className={`${
+    isActive('/festicaribe') ? "activeBorderBottom" : ""
+  }`}>
     Festicaribe
   </Link>
-  <Link to="/fundam" className="">
+  <Link to="/fundam" className={`${
+    isActive('/fundam') ? "activeBorderBottom" : ""
+  }`}>
     Fundam
   </Link>
-  <Link to="/cecota" className="">
+  <Link to="/cecota" className={`${
+    isActive('/cecota') ? "activeBorderBottom" : ""
+  }`}>
     Cecota
   </Link>
       </nav>

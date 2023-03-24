@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Clients = () => {
   return (
@@ -7,10 +8,15 @@ const Clients = () => {
         Con la confianza y el apoyo de:
       </h1>
       <div className="flex flex-col md:flex-row items-center flex-wrap gap-20">
-        <img src="festicaribe.png" className="w-40" />
-        <img src="fundam.png" className="w-40" />
-        <img src="cecota.png" className="w-40" />
-      
+        <Link to="/festicaribe">
+          <img src="festicaribe.png" className="w-40" />
+        </Link>
+        <Link to="/fundam">
+          <img src="fundam.png" className="w-40" />
+        </Link>
+        <Link to="/cecota">
+          <img src="cecota.png" className="w-40" />
+        </Link>
       </div>
     </div>
   );

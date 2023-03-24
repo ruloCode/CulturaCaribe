@@ -8,6 +8,12 @@ module.exports = {
         secondary: "#EAEAFC",
         footer: "#2E3E5C",
       },
+      backgroundColor: {
+        "gray-100": "#F3F4F6",
+      },
+      borderBottom: {
+        active: "2px solid #38B2AC",
+      },
     },
   },
   plugins: [],

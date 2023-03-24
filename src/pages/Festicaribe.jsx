@@ -1,14 +1,16 @@
 import React from "react";
-import Header from "../components/Header.jsx";
-import ClientFestiCaribe from "../components/ClientFestiCaribe.jsx";
-import Works from "../components/Works.jsx";
+import Header from "../components/Header";
+import ClientFestiCaribe from "../components/Festicaribe/ClientFestiCaribe";
+import Works from "../components/Festicaribe/WorksFesticaribe";
+import Footer from "../components/Footer.jsx";
 
-const Festicaribe = () => {
+export const Festicaribe = () => {
   return (
     <div>
       <Header />
       <ClientFestiCaribe />
       <Works />
+      <Footer />
     </div>
   );
 };
